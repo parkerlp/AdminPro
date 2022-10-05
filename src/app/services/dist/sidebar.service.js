@@ -18,6 +18,8 @@ var SidebarService = /** @class */ (function () {
                     { titulo: 'Main', url: '/' },
                     { titulo: 'ProgressBar', url: '/dashboard/progress' },
                     { titulo: 'Gráficas', url: '/dashboard/grafica1' },
+                    { titulo: 'Promesas', url: '/dashboard/promesas' },
+                    { titulo: 'RxJs', url: '/dashboard/rxjs' },
                 ]
             }
         ];

@@ -14,15 +14,19 @@ var dashboard_component_1 = require("./dashboard/dashboard.component");
 var progress_component_1 = require("./progress/progress.component");
 var grafica1_component_1 = require("./grafica1/grafica1.component");
 var account_settings_component_1 = require("./account-settings/account-settings.component");
+var promesas_component_1 = require("./promesas/promesas.component");
+var rxjs_component_1 = require("./rxjs/rxjs.component");
 var routes = [
     {
         path: 'dashboard',
         component: pages_component_1.PagesComponent,
         children: [
-            { path: '', component: dashboard_component_1.DashboardComponent },
-            { path: 'progress', component: progress_component_1.ProgressComponent },
-            { path: 'grafica1', component: grafica1_component_1.Grafica1Component },
-            { path: 'account-settings', component: account_settings_component_1.AccountSettingsComponent },
+            { path: '', component: dashboard_component_1.DashboardComponent, data: { titulo: 'Dashboard' } },
+            { path: 'progress', component: progress_component_1.ProgressComponent, data: { titulo: 'Progress Bar' } },
+            { path: 'grafica1', component: grafica1_component_1.Grafica1Component, data: { titulo: 'Gráfica Nro 1' } },
+            { path: 'account-settings', component: account_settings_component_1.AccountSettingsComponent, data: { titulo: 'Ajustes de tema' } },
+            { path: 'promesas', component: promesas_component_1.PromesasComponent, data: { titulo: 'Promesas' } },
+            { path: 'rxjs', component: rxjs_component_1.RxjsComponent, data: { titulo: 'RxJs' } },
         ]
     },
 ];
